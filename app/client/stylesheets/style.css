@@ -1,0 +1,294 @@
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Lato !important;
+  background-color: white;
+  height: 100%;
+  color: black;
+}
+
+.navbar-inverse {
+  color: white;
+  background-color: rgba(12, 18, 58, 0.6);
+  border-bottom: 4px solid #F68340;
+
+  -webkit-box-shadow: 0px 3px 5px rgba(12, 18, 58, 0.49);
+  -moz-box-shadow:    0px 3px 5px rgba(12, 18, 58, 0.49);
+  box-shadow:         0px 3px 5px rgba(12, 18, 58, 0.49);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+a#signup-link.pull-right {
+  color: black;
+}
+
+.nav .open > a, .nav .open > a:hover {
+  background-color: transparent;
+}
+
+.navbar-nav > li > a {
+  padding: 0;
+  line-height: 45px !important;
+}
+
+.dropdown-menu > li > a {
+  color: black;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: black;
+  border: none;
+}
+
+.header1 {
+  text-align: center;
+  height: 813px;
+  background-image: url('images/airplane1.jpg');
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.himage {
+  width: 200px;
+}
+
+.options, .options:hover {
+  font-size: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #F68340;
+}
+
+a, a:hover{
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+hr {
+  width: 30%;
+  border-color: white;
+}
+
+.button1 {
+  width: 15%;
+  border: white solid 1px;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 0.95em;
+}
+
+footer, .text-muted {
+  background-color: #0C103B; /* For Safari 5.1 to 6.0 */
+  color: white;
+}
+
+.well {
+  margin: 10px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px black;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 0;
+}
+
+
+h3 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.logosmall {
+  height: 50px;
+  width: 50px;
+}
+
+.fill {
+  background: #6E6175; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #E8B297, #DCAD9B, #BF9A97, #98818B, #6E6175); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #E8B297, #DCAD9B, #BF9A97, #98818B, #6E6175); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #E8B297, #DCAD9B, #BF9A97, #98818B, #6E6175); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #E8B297, #DCAD9B, #BF9A97, #98818B, #6E6175); /* Standard syntax */
+  height: 60px;
+}
+
+tr, td {
+  text-align: left;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+th {
+  color: black;
+  border-bottom: 2px solid #F68340 !important;
+}
+
+.row > .hold > h2 {
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.description {
+  text-align: center;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.itlist {
+  padding: 0;
+  margin: 0;
+}
+
+.itpic {
+  width: 40px;
+  margin-top: 20px;
+}
+
+.ittitle {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.hold {padding-bottom: 20px;}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#content {
+  padding-bottom: 60px; /* Height of the footer element */
+}
+
+footer {
+  width:100%;
+  position:absolute;
+  height: 60px;
+  bottom:0;
+  left:0;
+}
+
+p.text-center.text-muted {
+  margin: 0 !important;
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+.featureimg {
+  margin-top: 10px;
+  border-radius: 100%;
+  width: 200px;
+  margin-bottom:10px;
+}
+
+.devlink, .devlink:hover {
+  color: black;
+}
+
+.devbody {
+  text-align: center;
+  background-color: #F68340;
+}
+
+.guestlogin {
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 7px;
+  margin: auto;
+  width: 200px
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+.item {
+  background-image: url('/images/sunset.jpg');
+  background-size: cover;
+  height: 820px;
+  text-align: center;
+}
+
+.userheader {
+  line-height: 480px;
+  font-size: 40px;
+  padding: 0;
+  margin: 0 0 -210px 0;
+}
+
+.userbar {
+  margin-top: -90px;
+}
+
+.userdesc {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+.right.carousel-control, .left.carousel-control {
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE support */
+}
+
+legend.af-fieldGroup-heading {
+  display: none;
+}
+
+.form-horizontal {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+}
+
+button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:focus {
+  background-color:  #0C103B;
+}
+
+.addedit {
+  background-image: url('/images/airplane1.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+}
+
+.addeditwell {
+  background-color: rgba(250, 250, 250, 0.96);
+  padding-bottom: 5px;
+  border-top: 5px solid #F68340;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.addeditheader {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.addeditkeep {
+  margin: auto;
+}

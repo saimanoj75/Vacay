@@ -1,0 +1,14 @@
+<template name="Layout">
+  <div id="wrapper">
+    <div id="header">
+      {{> Header}}
+    </div>
+    <div id="content">
+      {{> yield}}
+      <div id="footer">
+        {{> Footer}}
+      </div>
+    </div>
+
+  </div>
+</template>

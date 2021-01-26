@@ -1,0 +1,183 @@
+<template name="Itinerary">
+  {{#IfLoggedIn}}
+  <div class="fill"></div>
+
+  <div class="row description">
+    <div class="hold">
+      <h2>ITINERARY</h2>
+      <hr style="border-color: black; margin-top: 5px; margin-bottom: 5px;">
+      <p>
+        View current reservations made by you.
+      </p>
+    </div>
+  </div>
+
+  <div class="well" style="overflow: auto;">
+    <img class="itpic" src="/images/airplane105.png">
+    <h2 class="ittitle">Flight</h2>
+
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>Flight Number</th>
+        <th>Departure Airport</th>
+        <th>Departure Time</th>
+        <th>Arrival Airport</th>
+        <th>Arrival Time</th>
+        <th>Confirmation Number</th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each flightList}}
+      <tr>
+        <td>{{flightnum}}</td>
+        <td>{{departure}}</td>
+        <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+        <td>{{arrival}}</td>
+        <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
+        <td>{{confirmation}}</td>
+        <td><a class="options" href="{{pathFor 'EditFlight'}}">EDIT</a></td>
+        <td><a class="options deleteflight" href="#">DELETE</a></td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 itlist" >
+      <div class="well" style="overflow: auto;">
+        <img class="itpic" src="/images/building255.png">
+        <h2 class="ittitle">Hotel</h2>
+
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Arrival Date</th>
+            <th>Departure Date</th>
+            <th>Hotel Name</th>
+            <th>Confirmation Number</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each hotelList}}
+          <tr>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
+            <td>{{hotelName}}</td>
+            <td>{{hotelcon}}</td>
+            <td><a class="options" href="{{pathFor 'EditHotel'}}">EDIT</a></td>
+            <td><a class="options deletehotel" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-6 itlist">
+      <div class="well" style="overflow: auto;">
+        <img class="itpic" src="/images/car189.png">
+        <h2 class="ittitle">Car Rental</h2>
+
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Pick-Up Date</th>
+            <th>Drop-Off Date</th>
+            <th>Rental Company</th>
+            <th>Confirmation Number</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each carrentalList}}
+          <tr>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
+            <td>{{company}}</td>
+            <td>{{confirmation}}</td>
+            <td><a class="options" href="{{pathFor 'EditCarRental'}}">EDIT</a></td>
+            <td><a class="options deletecarrental" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 itlist">
+      <div class="well" style="overflow: auto;">
+        <img class="itpic" src="/images/restaurant26.png">
+        <h2 class="ittitle">Dining</h2>
+
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Date</th>
+            <th>Restaurant</th>
+            <th>Confirmation</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each diningList}}
+          <tr>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td>{{restaurant}}</td>
+            <td>{{confirmation}}</td>
+            <td><a class="options" href="{{pathFor 'EditDining'}}">EDIT</a></td>
+            <td><a class="options deletedining" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-md-6 itlist">
+      <div class="well" style="overflow: auto;">
+        <img class="itpic" src="/images/fireworks11.png">
+        <h2 class="ittitle">Tours and Attractions</h2>
+        <table class="table table-hover">
+
+          <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Confirmation Number</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each attractionsList}}
+          <tr>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td>{{event}}</td>
+            <td>{{confirmation}}</td>
+            <td><a class="options" href="{{pathFor 'EditAttractions'}}">EDIT</a></td>
+            <td><a class="options deleteattractions" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  {{/IfLoggedIn}}
+</template>
